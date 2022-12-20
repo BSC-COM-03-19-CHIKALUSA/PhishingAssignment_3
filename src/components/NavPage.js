@@ -6,32 +6,32 @@ const NavPage = () => {
     return (
         <section className="centered ">
         <div className=" max-w-[950px] w-9/12 min-w-[300px] min-h-[400px] ">
-        <div className=" border-2 border-gray-100 bg-slate-600">
-        <h1 className="text-3xl font-semibold mg-1px pl-3 pr-3 gap-y-1">Login</h1>
+        <div className="border-2 border-gray-100 bg-slate-600">
+        <h1 className="pl-3 pr-3 text-3xl font-semibold mg-1px gap-y-1">Login</h1>
         <div className='mt-8'>
-            <div className='flex flex-col mg-1px pl-3 pr-3'>
+            <div className='flex flex-col pl-3 pr-3 mg-1px'>
                 <label className="text-lg font-medium "></label>
                 <input 
-                    className='w-full border-2 border-gray-100 p-4 mt-1 bg-transparent'
+                    className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100'
                     placeholder="Email*"/>
             </div>
-            <div className='flex flex-col mt-4 mg-1px pl-3 pr-3 gap-y-1'>
+            <div className='flex flex-col pl-3 pr-3 mt-4 mg-1px gap-y-1'>
                 <label className='text-lg font-medium '></label>
                 <input 
-                    className='w-full border-2 mg-1px border-gray-100 p-4 mt-1 bg-transparent'
+                    className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100 mg-1px'
                     placeholder="Password*"
                     type={"password"}
                 />
             </div>
-            <button className='font-medium text-base mg-1px text-violet-500 pl-3 gap-y-1'>Forgot your password</button>
+            <button className='pl-3 text-base font-medium mg-1px text-violet-500 gap-y-1'>Forgot your password</button>
     
-            <div className='mt-8 flex flex-col gap-y-1 pl-10 pr-10 gap-y-1'>
+            <div className='flex flex-col pl-10 pr-10 mt-8 gap-y-1'>
                 <button className='active:scale-[.98] active:duration-75 transition-all 
                 hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500
                  text-white font-bold text-lg gap-y-1'>Log in</button>
                  <div>
                  <input  type="checkbox" id='remember'/>
-                 <label className='ml-2 font-medium text-base gap-y-1 mg-1px' for="remember">RememberMe</label>
+                 <label className='ml-2 text-base font-medium gap-y-1 mg-1px' for="remember">RememberMe</label>
                   </div>
                        <p className="pl-10 gap-y-1">---------or----------</p>
                   <button 
@@ -45,11 +45,11 @@ const NavPage = () => {
                         Log in with Google
                 </button>
             </div>
-            <div className='mt-8 flex justify-between items-center'>
+            <div className='flex items-center justify-between mt-8'>
          
             
         </div>
-            <div className='mt-8 flex justify-center items-center'>
+            <div className='flex items-center justify-center mt-8'>
                 <p className='font-medium text-base pb-8 gap-y-0.0005'>Not yet a customer?</p>
             </div>
         </div>
