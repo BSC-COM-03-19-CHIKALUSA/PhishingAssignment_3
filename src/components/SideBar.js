@@ -19,7 +19,7 @@ const SideBar = () => {
         
         </button>) : (
              
-         <div className="fixed h-full w-[22vw] pt-21  top-0 left-0 bg-blue-400" >
+         <div className="fixed h-full w-[18vw] pt-21  top-0 left-0 bg-slate-800" >
          <button className="fixed w-6 text-xl text-white bg-red-800 top-4 left-60 rounded-xl" onClick={() => setIsOpen(!isOpen)}> X </button> 
          <p className="pt-20 pl-20 text-left text-white bg-slate-500">OWASP Juice SHop</p> 
          <div className="">
