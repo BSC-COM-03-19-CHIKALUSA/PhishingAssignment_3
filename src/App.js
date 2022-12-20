@@ -8,7 +8,7 @@ import SideBar from './components/SideBar';
 function App() {
   return (
    <>
-       <div>
+       <div className="pt-18">
    <NavBar/>
    <SideBar/>
        </div>

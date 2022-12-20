@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
         <>
         
-        <section className="grid grid-cols-2 pt-0 w-full h-20 bg-slate-400">
+        <section className="fixed grid w-full grid-cols-2 pt-0 bg-slate-400">
         <div className="grid items-center grid-cols-3 pl-0 pr-96">
             <div> <p className="">Menu_icon</p></div>
             <div className="w-20 pt-0 h-30 center"> <img src="/pictures/JuiceShop_Logo.png" alt="upload your face" /> </div >
