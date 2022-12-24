@@ -17,7 +17,7 @@ const SideBar = () => {
         <>   
         
         {!isOpen ?
-       (<button className="fixed z-30 flex items-center w-8 h-8 pl-2 cursor-pointer bg-slate-200 left-10 top-6"
+       (<button className="fixed z-30 flex items-center w-8 h-8 pl-1 cursor-pointer bg-slate-200 left-10 top-6"
         onClick={() => setIsOpen(!isOpen)}> <AiOutlineMenu/>
         
         </button>) : (

@@ -1,10 +1,12 @@
 import React from 'react'
+import {VscGithub} from 'react-icons/vsc'
 
 const Github = () => {
     return (
-        <div className="pt-5 pl-16 text-white">
-            Github
-        </div>
+        <div className="pt-5 pl-16 flex text-white">
+        <VscGithub/>    
+        Github
+          </div>
     )
 }
 
