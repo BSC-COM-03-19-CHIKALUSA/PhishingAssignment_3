@@ -4,7 +4,7 @@ import {TbMessageReport} from 'react-icons/tb'
 
 const Feedback = () => {
     return (
-        <div className="pt-5 pl-16 flex text-white">
+        <div className="pt-5 pl-16 text-1.5xl flex text-white">
             <TbMessageReport/>
              Customer Feedback
         </div>

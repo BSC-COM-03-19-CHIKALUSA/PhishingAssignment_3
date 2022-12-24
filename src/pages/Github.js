@@ -3,7 +3,7 @@ import {VscGithub} from 'react-icons/vsc'
 
 const Github = () => {
     return (
-        <div className="pt-5 pl-16 flex text-white">
+        <div className="pt-5 pl-16 text-2xl flex text-white">
         <VscGithub/>    
         Github
           </div>

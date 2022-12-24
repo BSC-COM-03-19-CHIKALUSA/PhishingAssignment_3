@@ -33,7 +33,7 @@ const NavPage = () => {
                  <input  type="checkbox" id='remember'/>
                  <label className='ml-2 text-base font-medium gap-y-1 mg-1px' for="remember">Remember Me</label>
                   </div>
-                       <p className="pl-10 gap-y-1">---------or----------</p>
+                       <p className="pl-8 text-white gap-y-1">_____________or_____________</p>
                   <button 
                     className='flex gap-y-0.05 mg-1px bg-green-700  items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 text-gray-700 font-semibold text-lg border-2 border-gray-100 '>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
