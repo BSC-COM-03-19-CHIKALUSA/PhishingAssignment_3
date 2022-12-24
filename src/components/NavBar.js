@@ -1,4 +1,7 @@
 import React from 'react'
+import {FiSearch} from 'react-icons/fi'
+import {BsPersonCircle} from 'react-icons/bs'
+import {BsGlobe2} from 'react-icons/bs'
 
 const NavBar = () => {
     return (
@@ -11,9 +14,9 @@ const NavBar = () => {
         </div>
     
         <div  className="grid grid-cols-3 pt-10 pr-0 pl-96">
-          <div> <p className="">Search_icon</p></div>
-          <div> <p className="">Account</p></div>
-          <div> <p className="">EN</p></div>
+          <div> <p className="w-8 h-8 p-0"><FiSearch/></p></div>
+          <div className='flex'><BsPersonCircle/> <p className="">Account</p></div>
+          <div className='flex'><BsGlobe2/> <p className="">EN</p></div>
         </div>
     
         </section>

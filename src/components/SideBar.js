@@ -7,6 +7,8 @@ import Github from '../pages/Github';
 import PhotoWall from '../pages/PhotoWall';
 import ScoreBoard from '../pages/ScoreBoard';
 import Version from '../pages/Version';
+import {AiOutlineMenu} from 'react-icons/ai'
+
 
 
 const SideBar = () => {
@@ -15,8 +17,8 @@ const SideBar = () => {
         <>   
         
         {!isOpen ?
-       (<button className="fixed z-30 flex items-center bg-blue-700 cursor-pointer rounded-xl left-10 top-6"
-        onClick={() => setIsOpen(!isOpen)}>menu 
+       (<button className="fixed z-30 flex items-center w-8 h-8 pl-2 cursor-pointer bg-slate-200 left-10 top-6"
+        onClick={() => setIsOpen(!isOpen)}> <AiOutlineMenu/>
         
         </button>) : (
              
