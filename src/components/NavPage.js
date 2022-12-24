@@ -31,7 +31,7 @@ const NavPage = () => {
                  text-white font-bold text-lg gap-y-1'>Log in</button>
                  <div>
                  <input  type="checkbox" id='remember'/>
-                 <label className='ml-2 text-base font-medium gap-y-1 mg-1px' for="remember">RememberMe</label>
+                 <label className='ml-2 text-base font-medium gap-y-1 mg-1px' for="remember">Remember Me</label>
                   </div>
                        <p className="pl-10 gap-y-1">---------or----------</p>
                   <button 

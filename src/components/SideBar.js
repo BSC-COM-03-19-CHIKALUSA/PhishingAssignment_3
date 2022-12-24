@@ -8,6 +8,7 @@ import PhotoWall from '../pages/PhotoWall';
 import ScoreBoard from '../pages/ScoreBoard';
 import Version from '../pages/Version';
 
+
 const SideBar = () => {
     const [isOpen,setIsOpen]=useState(false);
     return (
@@ -22,7 +23,8 @@ const SideBar = () => {
          <div className="fixed h-full w-[18vw] pt-21  top-0 left-0 bg-slate-800" >
          <button className="fixed w-6 text-xl text-white bg-red-800 top-4 left-60 rounded-xl" onClick={() => setIsOpen(!isOpen)}> X </button> 
          <p className="pt-20 pl-20 text-left text-white bg-slate-500">OWASP Juice SHop</p> 
-         <div className="">
+         <section>
+        
          <Contact/>
          <Feedback/>
          <Company/>
@@ -31,8 +33,10 @@ const SideBar = () => {
          <ScoreBoard/>
          <Github/>
          <Version/>
+            
+         </section>
          </div>
-        </div>
+        
              )
            }
         </>
