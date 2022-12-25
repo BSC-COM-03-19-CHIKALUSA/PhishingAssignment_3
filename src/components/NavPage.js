@@ -1,8 +1,31 @@
 import React from 'react'
+import { useState } from 'react'
+import UserService from '../pages/UserService';
+// import Validation from './Validation';
 import "./Navpage.css"
 
 const NavPage = () => {
+    const [user, setuser] = useState({
+        email: "",
+        password: "",
+    });
 
+     const [errors, setErrors] = useState({});
+
+    const handleChange = (e) => {
+        const value = e.target.value;
+        setuser({...user,[e.target.name]: value});
+    }
+
+    const loginUser =(e) => {
+        e.preventDefault();
+        // setErrors(Validation(user))
+        UserService.loginUser(user).then((response) =>{
+            console.log(response);
+        }).catch((error) =>{
+            console.log(error);
+        })
+    }
     return (
         <section className="centered ">
         <div className=" max-w-[950px] w-7/12 h-3/6 min-w-[300px] min-h-[400px] ">
@@ -10,23 +33,29 @@ const NavPage = () => {
         <h1 className="pl-3 pr-3 text-3xl font-semibold mg-1px gap-y-1">Login</h1>
         <div className='mt-8'>
             <div className='flex flex-col pl-3 pr-3 mg-1px'>
-                <label className="text-lg font-medium "></label>
+                <label className="text-lg font-medium ">
                 <input 
                     className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100'
-                    placeholder="Email*"/>
+                    placeholder="Email*"  name='email' value={user.email}
+                    onChange={(e) => handleChange(e)}/>
+                    {errors.email && <p className="error">{errors.email}</p>}
+                    </label>
             </div>
             <div className='flex flex-col pl-3 pr-3 mt-4 mg-1px gap-y-1'>
-                <label className='text-lg font-medium '></label>
+                <label className='text-lg font-medium '>
                 <input 
                     className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100 mg-1px'
                     placeholder="Password*"
-                    type={"password"}
+                    type={"password"} name='password' value={user.password}
+                    onChange={(e) => handleChange(e)}
                 />
+                {errors.password && <p className="error">{errors.password}</p>}
+                </label>
             </div>
             <button className='pl-3 text-base font-medium mg-1px text-violet-500 gap-y-1'>Forgot your password</button>
     
             <div className='flex flex-col pl-10 pr-10 mt-8 gap-y-1'>
-                <button className='active:scale-[.98] active:duration-75 transition-all 
+                <button onClick={loginUser} className='active:scale-[.98] active:duration-75 transition-all 
                 hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500
                  text-white font-bold text-lg gap-y-1'>Log in</button>
                  <div>
