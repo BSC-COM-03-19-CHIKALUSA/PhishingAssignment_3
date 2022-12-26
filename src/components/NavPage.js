@@ -19,7 +19,7 @@ const NavPage = () => {
 
     const loginUser =(e) => {
         e.preventDefault();
-        // setErrors(Validation(user))
+        
         UserService.loginUser(user).then((response) =>{
             console.log(response);
         }).catch((error) =>{
