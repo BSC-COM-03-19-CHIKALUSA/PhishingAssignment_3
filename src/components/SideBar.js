@@ -17,14 +17,14 @@ const SideBar = () => {
         <>   
         
         {!isOpen ?
-       (<button className="fixed z-40 left-20 flex items-center w-8 h-8 pl-1.5 cursor-pointer bg-slate-200  top-10"
+       (<button className="fixed sm:left-0  z-40 lg:left-20 flex items-center w-8 h-8 pl-1.5 cursor-pointer bg-slate-200  top-10"
         onClick={() => setIsOpen(!isOpen)}> <AiOutlineMenu/>
         
         </button>) : (
              
          <div className="fixed h-full w-[18vw] pt-21  top-0 left-0 bg-slate-800" >
-         <button className="fixed w-6 text-xl text-white hover:bg-red-800 top-4 left-60 " onClick={() => setIsOpen(!isOpen)}> X </button> 
-         <p className="pt-20 pl-20 text-left text-white bg-slate-500 top-8">OWASP Juice SHop</p> 
+         <button className="fixed lg:w-6 text-xl text-white hover:bg-red-800 top-4 left-60 " onClick={() => setIsOpen(!isOpen)}> X </button> 
+         <p className="pt-20 sm:left-0 lg:pl-20 text-left text-white bg-slate-500 top-8">OWASP Juice SHop</p> 
          <section>
         
          <Contact/>

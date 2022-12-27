@@ -19,7 +19,7 @@ const NavPage = () => {
 
     const loginUser =(e) => {
         e.preventDefault();
-        
+        // setErrors(Validation(user))
         UserService.loginUser(user).then((response) =>{
             console.log(response);
         }).catch((error) =>{
@@ -27,8 +27,8 @@ const NavPage = () => {
         })
     }
     return (
-        <section className="centered ">
-        <div className=" max-w-[950px] w-7/12 h-3/6 min-w-[300px] min-h-[400px] ">
+        <section className="centered sm:w-screen ">
+        <div className=" lg:max-w-[450px]  sm:left-0 sm:right-0 sm:top-4 sm:mb-0 lg:w-7/12 lg:h-3/6 lg:min-w-[300px] lg:min-h-[400px] ">
         <div className="border-2 border-gray-100 bg-slate-600">
         <h1 className="pl-3 pr-3 text-3xl font-semibold mg-1px gap-y-1">Login</h1>
         <div className='mt-8'>

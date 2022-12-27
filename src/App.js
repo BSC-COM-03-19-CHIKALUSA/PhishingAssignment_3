@@ -8,12 +8,15 @@ import SideBar from './components/SideBar';
 
 function App() {
   return (
-     <>       <div className="pt-18">
+     < >      
+     <div className="">
+      <div className="pt-18">
    <NavBar/>
    <SideBar/>
        </div>
-   <div className="h-screen bg-slate-700">
+   <div className="lg:h-screen bg-slate-700 sm:w-screen">
          <NavPage/>
+   </div>
    </div>
    </>
 
