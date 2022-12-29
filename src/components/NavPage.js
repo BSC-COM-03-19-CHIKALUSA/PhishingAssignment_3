@@ -4,7 +4,10 @@ import UserService from '../pages/UserService';
 // import Validation from './Validation';
 import "./Navpage.css"
 
+import {RiLoginBoxLine} from 'react-icons/ri'
+
 const NavPage = () => {
+
     const [user, setuser] = useState({
         email: "",
         password: "",
@@ -29,42 +32,46 @@ const NavPage = () => {
     return (
         <section className="centered sm:w-screen ">
         <div className=" lg:max-w-[450px]  sm:left-0 sm:right-0 sm:top-4 sm:mb-0 lg:w-7/12 lg:h-3/6 lg:min-w-[300px] lg:min-h-[400px] ">
-        <div className="border-2 border-gray-100 bg-slate-600">
+        <div className="text-white border-2 border-gray-100 border-none bg-neutral-800">
         <h1 className="pl-3 pr-3 text-3xl font-semibold mg-1px gap-y-1">Login</h1>
         <div className='mt-8'>
             <div className='flex flex-col pl-3 pr-3 mg-1px'>
                 <label className="text-lg font-medium ">
                 <input 
-                    className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100'
-                    placeholder="Email*"  name='email' value={user.email}
-                    onChange={(e) => handleChange(e)}/>
+                    className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100 opacity-20 rounded-xl'
+                    placeholder="Email *"  name='email' value={user.email}
+                    onChange={(e) => handleChange(e)}
+                    />
                     {errors.email && <p className="error">{errors.email}</p>}
                     </label>
             </div>
             <div className='flex flex-col pl-3 pr-3 mt-4 mg-1px gap-y-1'>
                 <label className='text-lg font-medium '>
                 <input 
-                    className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100 mg-1px'
-                    placeholder="Password*"
+                    className='w-full p-4 mt-1 bg-transparent border-2 border-gray-100 mg-1px opacity-20 rounded-xl'
+                    placeholder="Password *"
                     type={"password"} name='password' value={user.password}
                     onChange={(e) => handleChange(e)}
+                  
                 />
                 {errors.password && <p className="error">{errors.password}</p>}
                 </label>
             </div>
-            <button className='pl-3 text-base font-medium mg-1px text-violet-500 gap-y-1'>Forgot your password</button>
+            <button className='pl-3 text-base mg-1px text-lime-500 gap-y-1'>Forgot your password</button>
     
             <div className='flex flex-col pl-10 pr-10 mt-8 gap-y-1'>
                 <button onClick={loginUser} className='active:scale-[.98] active:duration-75 transition-all 
-                hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500
-                 text-white font-bold text-lg gap-y-1'>Log in</button>
+                hover:scale-[1.01]  ease-in-out opacity-30 transform py-4
+                 text-white font-bold bg-gray-500 text-lg gap-y-1 h-8 pt-0'>
+                 <div className="flex pt-1 pl-8"><RiLoginBoxLine/><div>Log in</div></div>
+                 </button>
                  <div>
                  <input  type="checkbox" id='remember'/>
                  <label className='ml-2 text-base font-medium gap-y-1 mg-1px' for="remember">Remember Me</label>
                   </div>
                        <p className="pl-8 text-white gap-y-1">_____________or_____________</p>
                   <button 
-                    className='flex gap-y-0.05 mg-1px bg-green-700  items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 text-gray-700 font-semibold text-lg border-2 border-gray-100 '>
+                    className='flex gap-y-0.05 mg-1px h-6 opacity-80 bg-lime-500  items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 text-gray-700 font-semibold text-lg border-2 border-gray-100 '>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.26644 9.76453C6.19903 6.93863 8.85469 4.90909 12.0002 4.90909C13.6912 4.90909 15.2184 5.50909 16.4184 6.49091L19.9093 3C17.7821 1.14545 15.0548 0 12.0002 0C7.27031 0 3.19799 2.6983 1.24023 6.65002L5.26644 9.76453Z" fill="#EA4335"/>
                             <path d="M16.0406 18.0142C14.9508 18.718 13.5659 19.0926 11.9998 19.0926C8.86633 19.0926 6.21896 17.0785 5.27682 14.2695L1.2373 17.3366C3.19263 21.2953 7.26484 24.0017 11.9998 24.0017C14.9327 24.0017 17.7352 22.959 19.834 21.0012L16.0406 18.0142Z" fill="#34A853"/>
@@ -79,7 +86,7 @@ const NavPage = () => {
             
         </div>
             <div className='flex items-center justify-center mt-8'>
-                <p className='font-medium text-base pb-8 gap-y-0.0005'>Not yet a customer?</p>
+                <p className='text-base text-lime-500 pb-8 gap-y-0.0005'>Not yet a customer?</p>
             </div>
         </div>
     </div>

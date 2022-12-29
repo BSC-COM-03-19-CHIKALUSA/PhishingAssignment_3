@@ -13,11 +13,12 @@
         padding-top: 150px;
         padding-left: 100px;
         padding-right: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
         position: fixed;
         background-color: rgb(51 65 85);
          }
 }
+
 .center{
     height: 7em;
 }

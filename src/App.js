@@ -14,7 +14,7 @@ function App() {
    <NavBar/>
    <SideBar/>
        </div>
-   <div className="lg:h-screen bg-slate-700 sm:w-screen">
+   <div className="lg:h-screen bg-neutral-900 sm:w-screen">
          <NavPage/>
    </div>
    </div>
